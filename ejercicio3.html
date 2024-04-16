@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verificar Tipo de Valor</title>
+</head>
+<body>
+
+<script>
+var texto1 = prompt(" introduce el primer texto:");
+var texto2 = prompt(" introduce el segundo texto:");
+
+var esNumericoTexto1 = !isNaN(parseFloat(texto1)) && isFinite(texto1);
+var esNumericoTexto2 = !isNaN(parseFloat(texto2)) && isFinite(texto2);
+
+if (esNumericoTexto1) {
+    alert("El primer texto introducido es un valor numérico.");
+} else {
+    alert("El primer texto introducido es una cadena.");
+}
+
+if (esNumericoTexto2) {
+    alert("El segundo texto introducido es un valor numérico.");
+} else {
+    alert("El segundo texto introducido es una cadena.");
+}
+</script>
+
+</body>
+</html>
